@@ -1,44 +1,85 @@
+
 body{
 
 margin:0;
 
-font-family:Arial, sans-serif;
+font-family:
+"PingFang SC",
+Arial,
+sans-serif;
+
 
 min-height:100vh;
 
+
 background:
-linear-gradient(
-135deg,
-#e8f3ff,
+
+radial-gradient(
+circle at top left,
 #ffffff,
-#dffcff
+#dff4ff,
+#eef0ff
 );
+
 
 }
 
+
+
+/* 顶部 */
 
 header{
 
-text-align:center;
+padding:70px 20px;
 
-padding:50px 20px;
+text-align:center;
 
 }
 
 
 
+/* 玻璃卡片 */
+
 .card{
+
 
 margin:30px;
 
-padding:25px;
 
-background:white;
+padding:30px;
 
-border-radius:25px;
+
+background:
+
+rgba(255,255,255,.35);
+
+
+backdrop-filter:
+
+blur(25px);
+
+
+-webkit-backdrop-filter:
+
+blur(25px);
+
+
+
+border:
+
+1px solid rgba(255,255,255,.5);
+
+
+
+border-radius:30px;
+
+
 
 box-shadow:
-0 10px 30px rgba(0,0,0,0.1);
+
+0 20px 50px rgba(0,0,0,.12);
+
+
 
 }
 
@@ -46,66 +87,76 @@ box-shadow:
 
 /* 液态玻璃底栏 */
 
+
 .glass-bar{
 
 
 position:fixed;
 
-bottom:20px;
+
+bottom:25px;
+
 
 left:50%;
+
 
 transform:translateX(-50%);
 
 
 
-width:85%;
+width:88%;
 
-max-width:500px;
+
+
+padding:18px 10px;
 
 
 
 display:flex;
 
+
 justify-content:space-around;
 
-
-
-padding:15px;
 
 
 
 background:
 
-rgba(255,255,255,0.25);
+rgba(255,255,255,.28);
+
 
 
 
 backdrop-filter:
 
-blur(20px);
+blur(30px);
 
 
 
 -webkit-backdrop-filter:
 
-blur(20px);
+blur(30px);
+
+
+
+
+border-radius:40px;
+
 
 
 
 border:
 
-1px solid rgba(255,255,255,0.4);
+1px solid rgba(255,255,255,.6);
 
-
-
-border-radius:35px;
 
 
 
 box-shadow:
 
-0 15px 40px rgba(0,0,0,0.2);
+
+0 15px 45px rgba(0,0,0,.18);
+
 
 
 
@@ -116,31 +167,32 @@ box-shadow:
 .glass-bar a{
 
 
-color:#222;
-
 text-decoration:none;
+
+
+color:#111;
 
 
 font-size:14px;
 
 
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-
-gap:5px;
+transition:.3s;
 
 
 }
 
 
+
 .glass-bar a:hover{
 
-transform:translateY(-5px);
+
+transform:
+
+translateY(-8px)
+scale(1.1);
+
 
 color:#007aff;
+
 
 }
