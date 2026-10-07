@@ -469,3 +469,63 @@ translateY(-80px);
 
 
 }
+
+/* 后台按钮 */
+
+.publish-btn{
+
+margin-top:20px;
+
+padding:15px 40px;
+
+
+border:none;
+
+
+border-radius:30px;
+
+
+
+background:
+
+linear-gradient(
+135deg,
+#8ee7ff,
+#6f8cff
+);
+
+
+
+color:white;
+
+
+font-size:16px;
+
+
+
+cursor:pointer;
+
+
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.2);
+
+
+
+transition:.3s;
+
+
+}
+
+
+
+.publish-btn:hover{
+
+
+transform:
+
+translateY(-5px);
+
+
+}
