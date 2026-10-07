@@ -35,7 +35,17 @@ if(title==""){
     return;
 }
 
-alert("文章创建成功");
+let post = {
+title:title,
+content:content
+};
+
+localStorage.setItem(
+"post",
+JSON.stringify(post)
+);
+
+alert("文章保存成功");
 
 } 
 
