@@ -188,6 +188,32 @@ placeholder="🔍 搜索内容"
 
 
 
+<div id="posts"></div>
+
+<script>
+
+let post = JSON.parse(
+localStorage.getItem("post")
+);
+
+
+if(post){
+
+document.getElementById("posts").innerHTML =
+`
+<div class="glass-card">
+
+<h2>${post.title}</h2>
+
+<p>${post.content}</p>
+
+</div>
+`;
+
+}
+
+</script>
+
 </body>
 
 </html>
