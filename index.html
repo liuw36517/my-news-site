@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -20,52 +19,24 @@
 
 <header>
 
-
-<div class="avatar">
-👤
-</div>
-
+<div class="glass-card">
 
 <h1>
-我的信息发布中心
+我的发布中心
 </h1>
 
-
 <p>
-资源 · 新闻 · 软件 · 分享
+新闻 · 资源 · 分享
 </p>
 
-
-<input 
-class="search"
-placeholder="🔍 搜索内容"
-/>
-
+</div>
 
 </header>
 
 
 
-
 <section class="news">
 
-<div id="posts">
-
-<div class="glass-card">
-
-<h2>我的第一篇文章</h2>
-
-<p>
-这是我的第一篇文章内容
-</p>
-
-<a href="posts/post1.html">
-阅读 →
-</a>
-
-</div>
-
-</div>
 
 <div class="glass-card">
 
@@ -73,83 +44,59 @@ placeholder="🔍 搜索内容"
 🔥 最新动态
 </h2>
 
-
 <p>
-网站正式升级上线
-</p>
-
-
-</div>
-
-
-
-<div class="grid">
-
-
-<div class="glass-card small">
-
-<h3>
-📢 公告
-</h3>
-
-<p>
-最新消息
+网站正式上线
 </p>
 
 </div>
 
 
 
-<div class="glass-card small">
+<!-- 自动显示文章 -->
 
-<h3>
-📦 资源
-</h3>
-
-<p>
-软件下载
-</p>
-
-</div>
-
-
-</div>
-
+<div id="posts"></div>
 
 
 
 <div class="glass-card">
 
-
 <h2>
-📰 最新文章
+📦 资源中心
 </h2>
 
-
 <p>
-这里发布文章内容
+软件、教程、资料
 </p>
 
-
-<a href="posts/post1.html">
-
-阅读第一篇文章 →
-
+<a href="resources/index.html">
+进入资源 →
 </a>
-
 
 </div>
 
 
+
 </section>
+
+
+
+
+
+<!-- 底部导航 -->
 
 <footer class="glass-bar">
 
 
-<a>
+<a href="index.html">
+
 🏠
-<span>首页</span>
+
+<span>
+首页
+</span>
+
 </a>
+
 
 
 <a href="publish/index.html">
@@ -163,6 +110,7 @@ placeholder="🔍 搜索内容"
 </a>
 
 
+
 <a href="resources/index.html">
 
 📦
@@ -171,15 +119,9 @@ placeholder="🔍 搜索内容"
 资源
 </span>
 
-
-
-
-
-
-<a>
-👤
-<span>我的</span>
 </a>
+
+
 
 <a href="admin/index.html">
 
@@ -192,36 +134,70 @@ placeholder="🔍 搜索内容"
 </a>
 
 
-
 </footer>
 
 
 
-<div id="posts"></div>
+
 
 <script>
 
+
 let post = JSON.parse(
+
 localStorage.getItem("post")
+
 );
+
 
 
 if(post){
 
+
 document.getElementById("posts").innerHTML =
+
+
 `
+
 <div class="glass-card">
 
-<h2>${post.title}</h2>
 
-<p>${post.content}</p>
+<h2>
+
+${post.title}
+
+</h2>
+
+
+
+<p>
+
+${post.content}
+
+</p>
+
+
+
+<a href="posts/post1.html">
+
+阅读文章 →
+
+</a>
+
 
 </div>
+
+
 `;
+
 
 }
 
+
+
 </script>
+
+
 
 </body>
 
