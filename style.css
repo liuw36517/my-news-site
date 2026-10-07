@@ -7,52 +7,45 @@ box-sizing:border-box;
 
 body{
 
-
 margin:0;
 
-
-padding-bottom:90px;
+padding-bottom:100px;
 
 
 font-family:
 
 Arial,
-
 "PingFang SC",
-
 sans-serif;
-
 
 
 background:
 
 linear-gradient(
-
 135deg,
-
 #ffffff,
-
 #dff6ff,
-
-#c9edff
-
+#c8edff
 );
-
 
 
 }
 
 
 
+header{
+
+padding:50px 20px 10px;
+
+}
+
+
 
 .glass-card{
 
-
 margin:20px;
 
-
 padding:25px;
-
 
 
 background:
@@ -60,15 +53,12 @@ background:
 rgba(255,255,255,.55);
 
 
-
 border-radius:30px;
-
 
 
 backdrop-filter:
 
 blur(20px);
-
 
 
 border:
@@ -76,85 +66,35 @@ border:
 1px solid rgba(255,255,255,.8);
 
 
-
 box-shadow:
 
 0 15px 40px rgba(0,0,0,.12);
 
 
-
 }
 
 
 
+.content{
 
-
-header{
-
-
-padding-top:50px;
-
-
-text-align:center;
-
+margin-bottom:100px;
 
 }
-
-
-
-
-
-h1{
-
-
-font-size:32px;
-
-
-}
-
-
-
-h2{
-
-
-font-size:24px;
-
-
-}
-
-
-
-p{
-
-
-font-size:17px;
-
-
-line-height:1.6;
-
-
-}
-
 
 
 
 a{
 
-
 text-decoration:none;
 
-
 color:#007aff;
-
 
 }
 
 
 
 
-
-
-/* 底部栏 */
+/* 底栏 */
 
 .glass-bar{
 
@@ -162,40 +102,33 @@ color:#007aff;
 position:fixed;
 
 
-bottom:15px;
-
-
 left:50%;
+
+
+bottom:15px;
 
 
 transform:translateX(-50%);
 
 
-
-width:94%;
-
+width:92%;
 
 
-height:65px;
-
+height:68px;
 
 
 display:flex;
 
 
+align-items:center;
+
 
 justify-content:space-around;
 
 
-
-align-items:center;
-
-
-
 background:
 
-rgba(255,255,255,.75);
-
+rgba(255,255,255,.8);
 
 
 backdrop-filter:
@@ -203,9 +136,7 @@ backdrop-filter:
 blur(20px);
 
 
-
 border-radius:35px;
-
 
 
 box-shadow:
@@ -213,12 +144,11 @@ box-shadow:
 0 10px 30px rgba(0,0,0,.15);
 
 
-
-z-index:999;
-
+z-index:9999;
 
 
 }
+
 
 
 
@@ -229,61 +159,44 @@ z-index:999;
 flex:1;
 
 
+height:60px;
+
 
 display:flex;
-
 
 
 flex-direction:column;
 
 
-
 align-items:center;
-
 
 
 justify-content:center;
 
 
+color:#333;
+
 
 font-size:12px;
-
-
-
-color:#111;
-
 
 
 white-space:nowrap;
 
 
-
 }
 
+
+
+.glass-bar a:first-letter{
+
+font-size:22px;
+
+}
 
 
 
 .glass-bar span{
 
-
 margin-top:3px;
-
-
-}
-
-
-
-
-
-@media(max-width:600px){
-
-
-h1{
-
-font-size:28px;
-
-}
-
-
 
 }
