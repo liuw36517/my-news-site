@@ -1,225 +1,289 @@
 *{
-    box-sizing:border-box;
+
+box-sizing:border-box;
+
 }
+
 
 body{
 
-    margin:0;
 
-    min-height:100vh;
+margin:0;
 
-    padding-bottom:80px;
 
-    font-family:
-    "PingFang SC",
-    Arial,
-    sans-serif;
+padding-bottom:90px;
 
-    background:
-    radial-gradient(
-        circle at top,
-        #ffffff,
-        #dff6ff,
-        #cceeff
-    );
+
+font-family:
+
+Arial,
+
+"PingFang SC",
+
+sans-serif;
+
+
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#ffffff,
+
+#dff6ff,
+
+#c9edff
+
+);
+
+
 
 }
 
 
-/* 顶部 */
 
-header{
-
-    padding:60px 20px 20px;
-
-    text-align:center;
-
-}
-
-
-/* 玻璃卡片 */
 
 .glass-card{
 
-    margin:20px;
 
-    padding:30px;
+margin:20px;
 
-    background:
-    rgba(255,255,255,.5);
 
-    backdrop-filter:blur(20px);
+padding:25px;
 
-    border-radius:30px;
 
-    border:
-    1px solid rgba(255,255,255,.8);
+
+background:
+
+rgba(255,255,255,.55);
+
+
+
+border-radius:30px;
+
+
+
+backdrop-filter:
+
+blur(20px);
+
+
+
+border:
+
+1px solid rgba(255,255,255,.8);
+
+
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.12);
+
+
 
 }
 
 
-/* 内容 */
+
+
+
+header{
+
+
+padding-top:50px;
+
+
+text-align:center;
+
+
+}
+
+
+
+
 
 h1{
 
-    font-size:32px;
+
+font-size:32px;
+
 
 }
+
 
 
 h2{
 
-    font-size:24px;
+
+font-size:24px;
+
 
 }
+
 
 
 p{
 
-    font-size:18px;
+
+font-size:17px;
+
+
+line-height:1.6;
+
 
 }
 
 
 
-/* 底部导航 */
+
+a{
+
+
+text-decoration:none;
+
+
+color:#007aff;
+
+
+}
+
+
+
+
+
+
+/* 底部栏 */
 
 .glass-bar{
 
-    position:fixed;
 
-    left:50%;
-
-    bottom:12px;
+position:fixed;
 
 
-    transform:translateX(-50%);
+bottom:15px;
 
 
-    width:96%;
+left:50%;
 
 
-    height:60px;
+transform:translateX(-50%);
 
 
-    display:flex;
+
+width:94%;
 
 
-    flex-direction:row;
+
+height:65px;
 
 
-    flex-wrap:nowrap;
+
+display:flex;
 
 
-    justify-content:space-around;
+
+justify-content:space-around;
 
 
-    align-items:center;
+
+align-items:center;
 
 
-    background:
-    rgba(255,255,255,.75);
+
+background:
+
+rgba(255,255,255,.75);
 
 
-    backdrop-filter:blur(20px);
+
+backdrop-filter:
+
+blur(20px);
 
 
-    border-radius:30px;
+
+border-radius:35px;
 
 
-    border:
-    1px solid rgba(255,255,255,.8);
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.15);
 
 
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.15);
 
+z-index:999;
 
-    z-index:9999;
 
 
 }
 
 
-/* 每个按钮 */
+
 
 .glass-bar a{
 
 
-    width:20%;
+flex:1;
 
 
-    height:50px;
+
+display:flex;
 
 
-    display:flex;
+
+flex-direction:column;
 
 
-    flex-direction:column;
+
+align-items:center;
 
 
-    justify-content:center;
+
+justify-content:center;
 
 
-    align-items:center;
+
+font-size:12px;
 
 
-    text-align:center;
+
+color:#111;
 
 
-    text-decoration:none;
 
+white-space:nowrap;
 
-    color:#111;
-
-
-    font-size:12px;
-
-
-    white-space:nowrap;
 
 
 }
 
 
 
-/* 图标 */
 
-.glass-bar a:first-line{
+.glass-bar span{
 
-    font-size:18px;
+
+margin-top:3px;
+
 
 }
 
 
-
-/* 卡片网格 */
-
-.grid{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:20px;
-
-}
 
 
 
 @media(max-width:600px){
 
-    .grid{
 
-        grid-template-columns:1fr 1fr;
+h1{
 
-    }
+font-size:28px;
+
+}
 
 
-    .glass-bar a{
-
-        font-size:11px;
-
-    }
 
 }
