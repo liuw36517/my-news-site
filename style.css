@@ -111,48 +111,35 @@ box-shadow:
 
 
 .glass-bar{
-}
+
 position:fixed;
 
-bottom:15px;
+bottom:10px;
 
 left:50%;
 
 transform:translateX(-50%);
 
+width:90%;
 
-width:88%;
-
-
-padding:5px 8px;
-
+padding:3px 5px;
 
 display:flex;
 
 justify-content:space-around;
 
-
-
 background:
-
 linear-gradient(
 135deg,
 rgba(255,255,255,0.55),
 rgba(255,255,255,0.18)
 );
 
+backdrop-filter:blur(20px);
 
+border-radius:25px;
 
-backdrop-filter:
-
-blur(35px);
-
-
-
--webkit-backdrop-filter:
-
-blur(35px);
-
+}
 
 
 border:
@@ -161,7 +148,6 @@ border:
 
 
 
-border-radius:45px;
 
 
 
@@ -182,14 +168,20 @@ box-shadow:
   
 text-decoration:none;
 color:#111;
-font-size:14px;
+font-size:10px;
 
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
 }
-  .glass-bar span{
+.glass-bar span{
+
+margin-top:0px;
+
+font-size:9px;
+
+  }
 
 text-decoration:none;
 
