@@ -25,7 +25,45 @@
 <script>
 
 function publish(){
-    alert("发布按钮成功运行");
+
+let title = document.querySelector("input").value;
+let content = document.querySelector("textarea").value;
+
+
+if(title==""){
+    alert("请输入标题");
+    return;
+}
+
+
+let page = `
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>${title}</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+<div class="glass-card">
+
+<h1>${title}</h1>
+
+<p>${content}</p>
+
+</div>
+
+</body>
+
+</html>
+`;
+
+
+alert("文章创建成功");
+
 }
 
 </script>
